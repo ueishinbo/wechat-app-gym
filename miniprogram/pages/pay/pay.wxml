@@ -1,0 +1,19 @@
+<view catchtap='showInputLayer' class="btn_pay">立即支付</view>
+<!-- 密码输入框 -->
+<view wx:if='{{showPayPwdInput}}'>
+    <view class='bg_layer'></view>
+    <view class='input_main'>
+        <view class='input_title'>
+            <view class='input_back' catchtap='hidePayLayer'><text></text></view>
+            <text>输入支付密码</text>
+        </view>
+        <view class='input_tip'><text>支付后将预定场地成功。</text></view>
+        <view class='input_row' catchtap='getFocus'>
+            <view class='pwd_item' wx:for='{{6}}' wx:key='item' wx:for-index='i'>
+                <text wx:if='{{pwdVal.length>i}}'></text>
+            </view>
+        </view>
+        <view class='forget_pwd' catchtap='hidePayLayer'>忘记密码</view>
+        <input class='input_control' password type='number' focus='{{payFocus}}' bindinput='inputPwd' maxlength='6'/>
+    </view>
+</view>

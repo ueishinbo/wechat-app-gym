@@ -1,0 +1,86 @@
+<!--miniprogram/pages/order-page/order-page.wxml-->
+
+<!-- 切换栏 -->
+<view class="swiper-tab">
+  <block wx:for="{{swipertab}}" wx:key="sptab">
+    <view class="swiper-tab-list {{currtab == item.index ? 'on' : ''}}" data-current="{{item.index}}" bindtap="tabSwitch">{{item.name}}</view>
+  </block>
+</view>
+ 
+<swiper current="{{currtab}}" class="swiper-box" duration="300" style="height:{{deviceH-31}}px" bindchange="tabChange">
+  <!-- 完成 -->
+  <swiper-item>
+    <scroll-view class="hot-box" scroll-y="true">
+      <view  class="orderDetails" wx:for="{{alreadyOrder}}" wx:key=" ">
+        <view class="orderListTitle">
+          <text class="userName">{{item.name}}</text>
+          <text class="orderStatus"  bindtap="OrderIfo">查看进场码</text>
+        </view>
+        <view class="orderListDetails">
+          <view class="productInfo">
+            <view class="productTitle">预定时间: {{item.time}}</view>
+            <view class="productPlace">预定场馆：{{item.place}}</view>
+            <view class="productPrice">当前状态：{{item.status}}</view>
+          </view>
+        </view>
+        
+        <view class="productCount">
+          <view>
+            <text> 合计：￥{{item.money}}</text>
+            <view wx:if="{{item.status==ifState}}">
+            <button class="refundButton" bindtap="refund">申请退款</button>
+          </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </swiper-item>
+  <!-- 待付款 -->
+  <swiper-item>
+    <scroll-view class="hot-box" scroll-y="true">
+      <view class="orderDetails" wx:for="{{waitPayOrder}}" wx:key=" " >
+        <view class="orderListTitle">
+           <text class="userName">{{item.name}}</text>
+           <text class="orderStatus">{{item.state}}</text>
+        </view>
+        <view class="orderListDetails">
+          <view class="productInfo">
+            <view class="productTitle">预定时间: {{item.time}}</view>
+            <view class="productPlace">预定场馆：{{item.place}}</view>
+            <view class="productPrice">当前状态：{{item.status}}</view>
+          </view>
+        </view>
+        <view class="productCount">
+          <view>
+             <text>合计：￥{{item.money}}</text>
+             <button class="refundButton" bindtap="OrdertoPay">付款</button>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </swiper-item>
+  <!-- 取消 -->
+  <swiper-item>
+    <scroll-view class="hot-box" scroll-y="true">
+      <view class="orderDetails" wx:for="{{lostOrder}}" wx:key=" " bindtap="OrderIfo">
+        <view class="orderListTitle">
+         <text class="userName">{{item.name}}</text>
+          <text class="orderStatus">{{item.state}}</text>
+        </view>
+        <view class="orderListDetails">
+          <view class="productInfo">
+            <view class="productTitle">预定时间: {{item.time}}</view>
+            <view class="productPlace">预定场馆：{{item.place}}</view>
+            <view class="productPrice">当前状态：{{item.status}}</view>
+          </view>
+        </view>
+        <view class="productCount">
+          <view>
+             <text>合计：￥{{item.money}}</text>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </swiper-item>
+ 
+</swiper>

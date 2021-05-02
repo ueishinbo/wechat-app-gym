@@ -1,0 +1,25 @@
+<!--miniprogram/pages/payCode/payCode.wxml-->
+<view class="body">
+
+<View>
+  <image src="/images/QRcode.jpg" class="image"></image>
+</View>
+
+</view>
+
+
+
+<!--暂时界面，之后有商户号后再接API-->
+<view calss="container" wx:if="{{!judge}}">
+<view class="title-box"> 
+</view>
+<button bindtap="pay" class="to-pay-btn" >
+付款
+</button>
+
+<button bindtap="refund" class="to-cancel-btn">
+申请退款
+</button>
+</view>
+
+

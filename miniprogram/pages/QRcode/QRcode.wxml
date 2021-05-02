@@ -1,0 +1,26 @@
+<!--miniprogram/pages/QRcode/QRcode.wxml-->
+<view class="body" wx:if="{{judge}}">
+  <view>{{datalist.time}}</view>
+  <View>
+    <image src="/images/QRcode.jpg" class="image"></image>
+  </View>
+  <view>{{datalist.place}}</view>
+
+  <view wx:if="{{flag}}">
+  <button class = "barcode" bindtap="showTime" >显示进场时间</button>
+  <button class = "barcode" bindtap="refund" >取消预定</button>
+</view>
+<view wx:if="{{!flag}}">
+  <button class = "barcode-after" >已开始计时 请查看首页</button>
+</view>
+
+</view>
+
+<view calss="container" wx:if="{{!judge}}">
+  <view class="title-box">
+    您目前没有预定哦～
+  </view>
+  <view bindtap="toIndexPage" class="to-index-btn">
+    去逛逛
+  </view>
+</view>

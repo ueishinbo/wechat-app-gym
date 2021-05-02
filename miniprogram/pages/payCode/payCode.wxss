@@ -1,0 +1,51 @@
+/* pages/payCode/payCode.wxss *//* miniprogram/pages/payCode/payCode.wxss */
+.body{
+  text-align: center;
+  margin-top: 100px;
+}
+.image{
+  width: 300rpx;
+  height: 300rpx;
+  margin: rpx;
+}
+.container {
+  background-color: #F2f2f2;
+  min-height: 100%;
+}
+.title-box{
+  width: 100%;
+  padding-top: 330rpx;
+  text-align: center;
+  font-size:28rpx;
+  color:#999;
+  background-size: 100rpx auto;
+  margin-bottom: 50rpx;
+}
+.to-pay-btn{
+  color:#fff;
+  background:#2f7b27;
+  border-radius:6px;
+  width:300rpx;
+  height:90rpx;
+  line-height: 70rpx;
+  text-align: center;
+  font-size:28rpx;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20pt;
+}
+.to-cancel-btn{
+  color:#fff;
+  background:red;
+  border-radius:6px;
+  width:300rpx;
+  height:90rpx;
+  line-height: 70rpx;
+  text-align: center;
+  font-size:28rpx;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10pt;
+}
+
+

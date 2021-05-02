@@ -1,0 +1,55 @@
+/* pages/homePage/homePage.wxss */
+swiper {
+  height: 300rpx;
+}
+swiper-item image {
+  width: 100%;
+  height: 100%;
+}
+.container{
+  background-color:"#F6F6F6";
+  height: 100vh;
+  display:block;
+  flex-direction: column;
+  margin: 0 30px;
+  padding: 0 4px;
+  align-items: flex-start;
+}
+
+.main{
+  display: block;
+  text-align:center;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.part{
+  padding-left: 12px;
+  margin-top: 50px;
+  
+}
+
+.fontstytle{
+  font-weight:bold;
+  font-size: 18px;
+}
+.QRcode{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top:20rpx;
+  font-size: 30px;
+  border-radius: 98px;
+}
+
+.btn{
+  background: #c8e5f8;
+  color:rgb(6, 101, 245);
+  align-items: center;
+  border-radius: 98px;
+  margin-top : 20px;
+  padding:0;
+  height:40px;
+  text-align: center;
+  line-height :40px;
+}

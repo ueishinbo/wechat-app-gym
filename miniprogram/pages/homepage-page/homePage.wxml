@@ -1,0 +1,35 @@
+<!--pages/homePage/homePage.wxml-->
+<view class="QRcode" bindtap="OrderIfo">
+      <button class = "btn">查看我的预约二维码</button>
+</view>
+<view class='main' wx:if="{{showtime}}">已进场: <text style='color:#6B4EFD'>{{countDownDay}} </text> 天<text style='color:#6B4EFD'>{{countDownHour}} </text> 时 <text style='color:#6B4EFD'>{{countDownMinute}} </text> 分 <text style='color:#6B4EFD'>{{countDownSecond}} </text> 秒
+</view>
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" />
+      </swiper-item>
+    </block>
+  </swiper>
+<view class="container">
+   <view class="part">
+      <view class="fontstytle">
+         <text>基本信息</text>
+      </view>
+      <text>  
+      简介:
+      时间：10:00-21:00
+      地址：
+      </text>
+   </view>
+
+   <view class="part">
+      <view class="fontstytle">
+         <text>联系我们</text>
+      </view>
+      <text> 
+      电话：
+      邮箱：
+      </text>
+   </view>
+</view>  

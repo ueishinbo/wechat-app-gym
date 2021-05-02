@@ -1,0 +1,6 @@
+/* pages/myinfo/myinfo.wxss */
+.info{
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx;
+}

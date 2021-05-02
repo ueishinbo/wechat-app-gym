@@ -1,0 +1,55 @@
+/* pages/My/my.wxss */
+.my_parts{
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx;
+}
+.my_item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20rpx;
+  margin-top: 20rpx;
+  border-bottom:solid 5rpx #eee;
+}
+.my_item image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.my_item_text{
+  padding: 20rpx;
+}
+.my_marts_info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20rpx;
+  margin-top: 20rpx;
+}
+.my_marts_info image{
+  width: 150rpx;
+  height: 150rpx;
+}
+.my_logi_text{
+  padding:50rpx;
+  margin: 30rpx;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+}
+.userinfo-avatar {
+  overflow:hidden;  
+  display: block;  
+  width: 160rpx;  
+  height: 160rpx;  
+  border-radius: 50%;  
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);  
+}
+.nickname{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

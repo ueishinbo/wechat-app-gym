@@ -1,0 +1,76 @@
+/* pages/login/login.wxss */
+page{ 
+  height: 100%; 
+ } 
+   
+ .container { 
+  height: 100%; 
+  display: flex; 
+  flex-direction: column; 
+  padding: 0; 
+  box-sizing: border-box; 
+  background-color: #f6f6f6
+ } 
+   
+ 
+
+   
+ /*表单内容*/
+ .login-from { 
+  margin-top: 20px; 
+  flex: auto; 
+  height:100%; 
+ } 
+   
+ .inputView { 
+  line-height: 45px; 
+  border: 1px solid gainsboro;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+  
+ } 
+ /*输入框*/
+ .focus {
+  border: 1px solid #008bff;
+}
+   
+ .loginLab { 
+  margin: 15px 15px 15px 10px; 
+  color: #545454; 
+  font-size: 14px
+ } 
+ .inputText { 
+  flex: block; 
+  float: right; 
+  text-align: right; 
+  margin-right: 22px; 
+  margin-top: 11px; 
+  align-items: center;
+  font-size: 14px
+ } 
+   
+ 
+ /*按钮*/
+ .loginBtnView { 
+  width: 100%; 
+  height: auto; 
+  background-color: #f6f6f6; 
+  margin-top: 0px; 
+  margin-bottom: 0px; 
+  padding-bottom: 0px; 
+ } 
+   
+ .loginBtn { 
+  width: 80%; 
+  margin-top: 35px; 
+  background-color: #008bff;
+  color: white;
+ }
+ .loginBtnbt { 
+  width: 80%; 
+  margin-top: 35px; 
+  background-color: #f6f6f6;
+  color: #008bff;
+  border: 1px solid #008bff;
+ }
+ 

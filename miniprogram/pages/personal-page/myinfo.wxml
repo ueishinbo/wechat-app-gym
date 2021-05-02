@@ -1,0 +1,29 @@
+<!--pages/myinfo/myinfo.wxml-->
+<view>
+  <!--基本信息-->
+  <view>
+    <view class="info">
+      <text>头像</text>
+    </view>
+    <view class="info">
+      <text>姓名</text>
+    </view>
+    <view class="info">
+      <text>邮箱</text>
+    </view>
+  </view>
+
+   <!--修改密码-->
+   <view>
+    <view id="changePassword">
+      <button bindtap="changePassword">修改密码</button>
+    </view>
+  </view>
+
+  <!--退出登录-->
+  <view>
+    <view id="logOut">
+      <button bindtap="logOut">退出登录</button>
+    </view>
+  </view>
+</view>

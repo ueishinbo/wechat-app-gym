@@ -1,0 +1,64 @@
+<!--pages/My/my.wxml-->
+
+<view class="my_parts">
+  <!--头像姓名等信息-->
+ <view class="my_marts_info">
+   <!--
+    <view bindtap="jumpLogin" wx:if="{{showDefalut}}">
+      <image src="/images/myUser.png" bindtap="jumpLogin" wx:if="{{showDefalut}}"></image>
+      <view class="my_login_text">
+        <text id="login">登陆/注册</text>
+      </view>
+    </view>
+  -->
+    <!--<view class="my_marts_info" wx:if="{{showUser}}"> -->
+      <view bindtap="jumpPersonal" wx:if="{{username!='请登录'}}">
+        <view class="userinfo-avatar">
+          <open-data type="userAvatarUrl" class="userinfo-avatar"></open-data>
+        </view>
+        <view class = "nickname">{{username}}</view>
+      </view>
+      <!---->
+    <view bindtap="jumpLogin" wx:if="{{username =='请登录'}}">
+      <view class="my_marts_info">
+        <view bindtap="jumpLogin">
+          <image src="/images/myUser.png" bindtap="jumpLogin" ></image>
+          <view class="my_login_text">
+            <text id="login">登陆/注册</text>
+          </view>
+        </view>
+       </view> 
+      </view>
+      <!---->
+     
+      
+   <!-- </view> -->
+  </view>
+  <!--我的预约等信息-->
+  <view class="my_item" bindtap="jumpOrder" wx:if="{{username!='请登录'}}">
+    <image src="/images/myOrder.png"></image>
+    <view class="my_item_text">
+      <text>我的订单</text>
+    </view>
+  </view>
+  <view class="my_item" bindtap="pleaseLogin" wx:if="{{username=='请登录'}}">
+    <image src="/images/myOrder.png"></image>
+    <view class="my_item_text">
+      <text>我的订单</text>
+    </view>
+  </view>
+
+  <view class="my_item" bindtap = "jumpWallet" wx:if="{{username!='请登录'}}">
+    <image src="/images/myWallet.png"></image>
+    <view class="my_item_text">
+      <text>我的卡包</text>
+    </view>
+  </view>
+
+  <view class="my_item" bindtap = "pleaseLogin" wx:if="{{username=='请登录'}}">
+    <image src="/images/myWallet.png"></image>
+    <view class="my_item_text">
+      <text>我的卡包</text>
+    </view>
+  </view>
+</view>

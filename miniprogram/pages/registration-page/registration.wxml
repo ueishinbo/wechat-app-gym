@@ -1,0 +1,34 @@
+<!--pages/registration/registration.wxml-->
+<view>
+	<view class="register_type">
+		<view class="phone_register {{registerParam?'selected':'unselected'}}" bindtap="phoneRegister">手机号注册</view>
+		<view class="email_register {{registerParam?'unselected':'selected'}}" bindtap="emailRegister">邮箱注册</view>
+	</view>
+
+	<view>
+		<form>
+			<view wx:if="{{registerParam}}" class="phone_num input_view {{focusPhoneNum?'focus':'blur'}}">
+				<input type="number" placeholder="请输入手机号" bindfocus="focusPhoneNum" bindblur="blurPhoneNum"></input>
+			</view>
+
+			<view wx:else class="email input_view {{focusEmail?'focus':'blur'}}">
+				<input placeholder="请输入邮箱" bindfocus="focusEmail" bindblur="blurEmail"></input>
+			</view>
+
+			<view class="username input_view {{focusUserName?'focus':'blur'}}">
+				<input placeholder="请输入用户名" bindfocus="focusUserName" bindblur="blurUserName"></input>
+			</view>
+
+			<view class="password input_view {{focusPassword?'focus':'blur'}}">
+				<input type="password" placeholder="请输入密码" bindfocus="focusPassword" bindblur="blurPassword"></input>
+			</view>
+
+			<view class="repassword input_view {{focusRePassword?'focus':'blur'}}">
+				<input type="password" placeholder="确认密码" bindfocus="focusRePassword" bindblur="blurRePassword"></input>
+			</view>
+
+			<button class="submit" form-type="submit" bindtap="submit">注册</button>
+		</form>
+	</view>
+
+</view>

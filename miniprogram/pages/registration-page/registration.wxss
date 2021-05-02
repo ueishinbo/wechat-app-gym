@@ -1,0 +1,57 @@
+/* pages/register/register.wxss */
+
+.register_type {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 30rpx;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.phone_register,
+.email_register {
+  width: 30%;
+  line-height: 200%;
+  text-align: center;
+}
+
+.selected {
+  color: #008bff;
+  border-bottom: 4rpx solid #008bff;
+}
+
+.unselected {
+  color: rgb(204, 204, 204);
+  border-bottom: 4rpx solid rgb(204, 204, 204);
+}
+
+.input_view {
+  width: 80%;
+  height: 100rpx;
+  margin: 0 auto;
+  border: 1px solid gainsboro;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+  align-items: center;
+  padding-left: 50rpx;
+}
+
+.focus {
+  border: 1px solid #008bff;
+}
+
+.blur {
+  border: 1px solid gainsboro;
+}
+
+.error {
+  border: 1px solid #2f7b27;
+}
+
+.submit {
+  width: 87%;
+  margin-top: 40rpx;
+  background-color: #008bff;
+  color: white;
+}

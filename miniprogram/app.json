@@ -1,26 +1,52 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/userConsole/userConsole",
-    "pages/storageConsole/storageConsole",
-    "pages/databaseGuide/databaseGuide",
-    "pages/addFunction/addFunction",
-    "pages/deployFunctions/deployFunctions",
-    "pages/chooseLib/chooseLib",
-    "pages/openapi/openapi",
-    "pages/openapi/serverapi/serverapi",
-    "pages/openapi/callback/callback",
-    "pages/openapi/cloudid/cloudid",
-    "pages/im/im",
-    "pages/im/room/room"
+    "pages/my-page/my",
+    "pages/pay/pay",
+    "pages/homepage-page/homePage",
+    "pages/QRcode/QRcode",
+    "pages/login-page/login",
+    "pages/registration-page/registration",
+    
+    "pages/reserve-page/reserve",
+    "pages/personal-page/myinfo",
+    "pages/order-page/order-page",
+    "pages/changePassword/changePassword",
+    "pages/payCode/payCode",
+    "pages/wallet/wallet"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTitleText": "创森体育馆",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "style": "v2",
+  "tabBar": {
+    "color": "#858585",
+    "selectedColor": "#f0145a",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/homepage-page/homePage",
+        "iconPath": "pages/img/bottomNav/home.png",
+        "selectedIconPath": "pages/img/bottomNav/home_select.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/reserve-page/reserve",
+        "iconPath": "pages/img/bottomNav/classify.png",
+        "selectedIconPath": "pages/img/bottomNav/classify_select.png",
+        "text": "预定"
+      },
+      {
+        "pagePath": "pages/my-page/my",
+        "iconPath": "pages/img/bottomNav/mine.png",
+        "selectedIconPath": "pages/img/bottomNav/mine_select.png",
+        "text": "我的"
+      }
+    ]
+  }
 }
