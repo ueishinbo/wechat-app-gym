@@ -1,0 +1,23 @@
+{
+  "name": "wechat-app-gym",
+  "version": "1.0.0",
+  "description": "微信小程序体育馆预约(Wechat Mini Program about gym reserve)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ueishinbo/wechat-app-gym.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ueishinbo/wechat-app-gym/issues"
+  },
+  "homepage": "https://github.com/ueishinbo/wechat-app-gym#readme",
+  "dependencies": {
+    "miniprogram-sm-crypto": "^0.2.7"
+  }
+}
